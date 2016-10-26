@@ -3,7 +3,7 @@ The RetroPie CLCD Project Copyright (C) 2016 by the following:
 We are members of Raspberrypi Village & Raspberrypi Gamer Cafe.
 
 * zzeromin
-* smyani (The father of RAS-Joy-Box)
+* smyani (The Father of RAS-Joy-Box)
 * zerocool
 * superstar
 
