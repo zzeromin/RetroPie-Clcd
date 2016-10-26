@@ -22,7 +22,7 @@ running on Raspberry Pi 2,3, which displays all neccessary info on a 16x2 LCD di
 #Features:
 1. Current date and time, IP address of eth0, wlan0
 2. CPU temperature and speed
-3. Emulation amd ROM information
+3. Emulation and ROM information
 """
 
 import I2C_LCD_driver
