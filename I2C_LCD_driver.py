@@ -160,6 +160,7 @@ class lcd:
 
    # clear lcd and set to home
    def lcd_clear(self):
+      self.lcd_write(0x0)
       self.lcd_write(LCD_CLEARDISPLAY)
       self.lcd_write(LCD_RETURNHOME)
 
