@@ -1,0 +1,13 @@
+# systemd service about auto-start clcd.service after booting
+# path and command: sudo nano /lib/systemd/system/clcd.service
+
+[Unit]
+Description=Retropie 16x2 CLCD Service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /home/pi/Retropie-Clcd/retropie_clcd.py
+
+[Install]
+WantedBy=multi-user.target
