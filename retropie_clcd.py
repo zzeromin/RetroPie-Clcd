@@ -63,9 +63,20 @@ cmd = "ip addr show wlan0 | grep 'inet ' | awk '{print $2}' | cut -d/ -f1"
 old_Temp = new_Temp = get_cpu_temp()
 old_Speed = new_Speed = get_cpu_speed()
 
-mylcd.lcd_display_string("RAS Console-Pi", 1, 1)
+mylcd.lcd_display_string("Welcome", 1, 5)
+mylcd.lcd_display_string("RAS Console Pi", 2, 1)
+sleep(5) # 5 sec delay
+mylcd.lcd_clear()
+
+mylcd.lcd_display_string("RPi Village", 1, 3)
 mylcd.lcd_display_string("www.rasplay.org", 2, 1)
 sleep(5) # 5 sec delay
+mylcd.lcd_clear()
+
+mylcd.lcd_display_string("cafe.naver.com/", 1, 1)
+mylcd.lcd_display_string("raspigamer", 2, 3)
+sleep(5) # 5 sec delay
+mylcd.lcd_clear()
 
 while 1:
    
