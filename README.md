@@ -1,7 +1,7 @@
-# Retropie-Clcd
-Scrolling Game Title for Retropie v4.0.2 using 16x2 CLCD on RAS Console-Pi
+# RetroPie-Clcd
+Scrolling Game Title for RetroPie v4.0.2 using 16x2 CLCD on RAS Console-Pi
 
-Small script written in Python for Retropie project (https://retropie.org.uk/) 
+Small script written in Python for RetroPie project (https://retropie.org.uk/) 
 running on Raspberry Pi 2,3, which displays all neccessary info on a 16x2 CLCD display
 
 #Features:
