@@ -7,7 +7,7 @@ After=multi-user.target
 
 [Service]
 Type=idle
-ExecStart=/usr/bin/python /home/pi/Retropie-Clcd/retropie_clcd.py
+ExecStart=/usr/bin/python /home/pi/RetroPie-Clcd/retropie_clcd.py
 
 [Install]
 WantedBy=multi-user.target
