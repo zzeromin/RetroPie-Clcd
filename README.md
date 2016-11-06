@@ -4,6 +4,8 @@ Scrolling Game Title for RetroPie v4.0.2 using 16x2 CLCD on RAS Console-Pi
 Small script written in Python for RetroPie project (https://retropie.org.uk/) 
 running on Raspberry Pi 2,3, which displays all neccessary info on a 16x2 CLCD display
 
+<img src="https://github.com/zzeromin/RetroPie-Clcd/blob/master/RetroPie-Clcd01.jpg" width="500" height="500">
+
 #Features:
 1. Current date and time, IP address of eth0, wlan0
 2. CPU temperature and speed
