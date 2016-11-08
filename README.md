@@ -20,7 +20,9 @@ running on Raspberry Pi 2,3, which displays all neccessary info on a 16x2 CLCD d
 * http://forums.rasplay.org/topic/318/scrolling-game-title-for-retropie-v4-0-2-using-16x2-clcd-on-ras-console-pi
 * I'm going to share script for automatic install as soon as possible.
 
-<pre><code>cd /home/pi/RetroPie-Clcd/
+<pre><code>cd
+git clone https://github.com/zzeromin/RetroPie-Clcd.git
+cd /home/pi/RetroPie-Clcd/
 chmod 755 10.CLCD.sh
 sudo ./10.CLCD.sh
 </code></pre>
