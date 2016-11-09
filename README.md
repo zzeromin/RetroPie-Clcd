@@ -16,7 +16,7 @@ running on Raspberry Pi 2,3, which displays all necessary info on a 16x2 CLCD di
 * https://youtu.be/W6jqBTqPqjw
 * https://youtu.be/_7mxhkkjFqk
 
-##Deployment Environment
+##Development Environment
 * Raspberry Pi 2, 3
 * RetroPie v4.0.2 and later
 * 16x2 I2C Character LCD
