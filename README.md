@@ -14,6 +14,7 @@ running on Raspberry Pi 2,3, which displays all necessary info on a 16x2 CLCD di
 
 ##Youtube
 * https://youtu.be/W6jqBTqPqjw
+* https://youtu.be/5KBNl-k6-SA
 * https://youtu.be/_7mxhkkjFqk
 
 ##Development Environment
