@@ -1,7 +1,7 @@
 # RetroPie-Clcd
 Scrolling Game Title for RetroPie v4.0.2 using 16x2 CLCD on RAS Console-Pi
 
-<img src="https://github.com/zzeromin/RetroPie-Clcd/blob/master/RetroPie-Clcd01.jpg" width="60%" height="60%">
+<img src="https://github.com/zzeromin/RetroPie-Clcd/blob/master/RetroPie-Clcd01.jpg" width="70%" height="70%">
 
 ##About
 Small script written in Python for RetroPie project (https://retropie.org.uk/) 
