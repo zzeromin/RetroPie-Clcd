@@ -16,6 +16,11 @@ running on Raspberry Pi 2,3, which displays all neccessary info on a 16x2 CLCD d
 * https://youtu.be/W6jqBTqPqjw
 * https://youtu.be/_7mxhkkjFqk
 
+##Deployment Environment
+* Raspberry Pi 2, 3
+* RetroPie v4.0.2 and later
+* 16x2 I2C Character LCD
+
 ##How to setup
 
 <pre><code>cd /home/pi
