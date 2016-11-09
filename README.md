@@ -17,7 +17,6 @@ running on Raspberry Pi 2,3, which displays all neccessary info on a 16x2 CLCD d
 * https://youtu.be/_7mxhkkjFqk
 
 ##How to setup
-* I'm going to share script for automatic install as soon as possible.
 
 <pre><code>cd /home/pi
 git clone https://github.com/zzeromin/RetroPie-Clcd.git
