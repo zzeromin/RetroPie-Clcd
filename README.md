@@ -8,8 +8,8 @@ Small script written in Python for RetroPie project (https://retropie.org.uk/)
 running on Raspberry Pi 2,3, which displays all neccessary info on a 16x2 CLCD display
 
 ##Features
-* Current date and time, IP address of eth0, wlan0
-* CPU temperature and speed
+* Current Ddate and Time, IP address of eth0, wlan0
+* CPU Temperature and Speed
 * Emulation and ROM information
 
 ##Youtube
