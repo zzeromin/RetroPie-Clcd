@@ -21,8 +21,7 @@ running on Raspberry Pi 2,3, which displays all neccessary info on a 16x2 CLCD d
 * RetroPie v4.0.2 and later
 * 16x2 I2C Character LCD
 
-##How to setup
-
+##Install
 <pre><code>cd /home/pi
 git clone https://github.com/zzeromin/RetroPie-Clcd.git
 cd /home/pi/RetroPie-Clcd/
