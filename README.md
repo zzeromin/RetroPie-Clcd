@@ -25,6 +25,10 @@ chmod 755 10.CLCD.sh
 sudo ./10.CLCD.sh
 </code></pre>
 
+* Raspberry Pi I2C GPIO Pinout
+
+![Alt text](https://i.imgur.com/WTPHzsf.png)
+
 * http://forums.rasplay.org/topic/318/scrolling-game-title-for-retropie-v4-0-2-using-16x2-clcd-on-ras-console-pi
 
 ## Reference
