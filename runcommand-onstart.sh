@@ -23,14 +23,14 @@ rom_bn="${rom##*/}"
 
 # For English User
 # Display Game name to EmulationStation and CLCD from same gamelist.xml
-#GAMELIST1="/home/pi/RetroPie/roms/${system}/gamelist.xml"
-#GAMELIST2="/home/pi/.emulationstation/gamelists/${system}/gamelist.xml"
+GAMELIST1="/home/pi/RetroPie/roms/${system}/gamelist.xml"
+GAMELIST2="/home/pi/.emulationstation/gamelists/${system}/gamelist.xml"
 
 # For 2Byte Language User(Korean, Japanese, etc..)
 # Display Game name to EmulationStation from gamelist.xml(Korean Game name)
 # Display Game name to CLCD from gamelist_en.xml(English Game name)
-GAMELIST1="/home/pi/RetroPie/roms/${system}/gamelist_en.xml"
-GAMELIST2="/home/pi/.emulationstation/gamelists/${system}/gamelist_en.xml"
+#GAMELIST1="/home/pi/RetroPie/roms/${system}/gamelist_en.xml"
+#GAMELIST2="/home/pi/.emulationstation/gamelists/${system}/gamelist_en.xml"
 
 if [ -f ${GAMELIST1} ]
 then
