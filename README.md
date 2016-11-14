@@ -34,6 +34,29 @@ chmod 755 10.CLCD.sh
 sudo ./10.CLCD.sh
 </code></pre>
 
+##Check 
+You should check your I2C address of 16x2 CLCD.
+I saw two types of I2C LCD modules. Those have two address each other normally => 0x27 or 0x3f.
+
+<pre><code>sudo i2cdetect -y 1
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- 27 -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</code></pre>
+
+edit line #22 in I2C_LCD_driver.py 0x27 or 0x3f.
+
+<pre><code>cd RetroPie-Clcd/
+sudo nano I2C_LCD_driver.py
+
+# LCD Address
+ADDRESS = 0x27 # or 0x3f
+</code></pre>
+
 * Raspberry Pi I2C GPIO Pinout
 
 ![Alt text](https://i.imgur.com/WTPHzsf.png)
