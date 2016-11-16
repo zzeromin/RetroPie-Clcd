@@ -1,9 +1,9 @@
 ## 10.CLCD.sh
 # Title        : Scrolling Game Title for Retropie v4.0.2 using 16x2 CLCD on RAS Console-Pi
-# Author       : zzeromin, member of Raspberrypi Village
+# Author       : zzeromin, member of Raspberrypi Village & raspigamer
 # Creation Date: Oct 28, 2016
 # Blog         : http://rasplay.org, http://forums.rasplay.org/, https://zzeromin.tumblr.com/
-# Thanks to    : smyani, zerocool, GreatKStar
+# Thanks to    : smyani, zerocool, superstar
 # Free and open for all to use. But put credit where credit is due.
 #
 # How to Setup : 
