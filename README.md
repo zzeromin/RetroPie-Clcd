@@ -8,7 +8,7 @@ Small script written in Python for RetroPie project (https://retropie.org.uk/)
 running on Raspberry Pi 2,3, which displays all necessary info on a 16x2 CLCD display
 
 ##Features
-* Current Ddate and Time, IP address of eth0, wlan0
+* Current Date and Time, IP address of eth0, wlan0
 * CPU Temperature and Speed
 * Emulation and ROM information
 
@@ -36,7 +36,7 @@ sudo ./10.CLCD.sh
 
 ##Check 
 You should check your I2C address of 16x2 CLCD.
-I saw two types of I2C LCD modules. Those have two address each other normally => 0x27 or 0x3f.
+I saw two types of I2C LCD modules. Those are two address each other normally => 0x27 or 0x3f.
 
 <pre><code>sudo i2cdetect -y 1
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
