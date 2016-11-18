@@ -156,6 +156,7 @@ while 1:
          sleep(1)
          f.close()
 
+         flag = "TURN OFF"
          lines = rom
          wait = 0
          speed = 0.1
@@ -164,7 +165,7 @@ while 1:
          scroller = Scroller(lines=lines)
 
          while True :
-            if wait < 10 :
+            if wait < 10 and system != flag:
                message = scroller.scroll()       
                mylcd.lcd_display_string( "%s" %(system), 1, 0 )
                mylcd.lcd_display_string( "%s" %(message), 2 )
