@@ -63,6 +63,14 @@ cmd = "ip addr show wlan0 | grep 'inet ' | awk '{print $2}' | cut -d/ -f1"
 old_Temp = new_Temp = get_cpu_temp()
 old_Speed = new_Speed = get_cpu_speed()
 
+icons = [
+                [ 0b00000, 0b11111, 0b11011, 0b10001, 0b10001, 0b10001, 0b11111, 0b00000 ], # Ethernet
+                [ 0b00000, 0b00000, 0b00001, 0b00001, 0b00101, 0b00101, 0b10101, 0b00000 ] # Wireless
+        ]
+
+# Load logo chars (icons)
+mylcd.lcd_load_custom_chars(icons)
+
 mylcd.lcd_display_string("Welcome", 1, 5)
 mylcd.lcd_display_string("RAS Console Pi", 2, 1)
 sleep(5) # 5 sec delay
@@ -83,19 +91,35 @@ while 1:
    mylcd.lcd_clear()
    sec = 0
    while ( sec < 5 ) :
-      # ip & date information
-      ipaddr = run_cmd(cmd)
+      # wlan ip address
+      ipaddr = run_cmd(cmd).replace("\n","")
 
       # selection of wlan or eth address
-      count = len(ipaddr)
-      if count == 0 :
-         ipaddr = run_cmd(cmdeth)
+      length = len(ipaddr)
+      full_length = 15
+      space = ""
 
-      ipaddr = ipaddr.replace("\n","")
+      if length == 0 :
+         ipaddr = run_cmd(cmdeth).replace("\n","")
+
+	 if len(ipaddr) == 15 : 
+            ipaddr = unichr(0)+run_cmd(cmdeth)
+         else :	
+            for i in range( 15-len(ipaddr) ) :
+                space = space + " "
+            ipaddr = unichr(0)+space+run_cmd(cmdeth)
+      else :
+         if len(ipaddr) == 15 :
+            ipaddr = unichr(1)+run_cmd(cmd)
+         else :
+            for i in range( 15-len(ipaddr) ) :
+                space = space + " "
+            ipaddr = unichr(1)+space+run_cmd(cmd)
+
       #print datetime.now().strftime( "%b %d  %H:%M:%S" )
       #print "IP " + str( ipaddr )
       mylcd.lcd_display_string( datetime.now().strftime( "%b %d  %H:%M:%S" ), 1, 0 )
-      mylcd.lcd_display_string( "IP %s" %(ipaddr), 2, 0 )
+      mylcd.lcd_display_string( ipaddr, 2, 0 )
       sec = sec + 1
       sleep(1)
 
