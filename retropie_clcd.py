@@ -179,12 +179,12 @@ while 1:
             "notice":"TURN OFF",
          }
          system = systemMap.get(system)
-         mylcd.lcd_display_string( "%s" %(system), 1, 0	)
          rom = f.readline()
          rom = rom.replace("\n","")
          mylcd.lcd_display_string( "%s" %(rom), 2 )
-         sleep(1)
-         f.close()
+         mylcd.lcd_display_string( "%s" %(system), 1, 0 )
+         sleep(3)
+         f.close() 
 
          flag = "TURN OFF"
          lines = rom
