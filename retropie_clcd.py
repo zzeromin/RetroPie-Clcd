@@ -96,18 +96,21 @@ while 1:
 
       # selection of wlan or eth address
       length = len(ipaddr)
-      full_length = 15
       space = ""
 
       if length == 0 :
          ipaddr = run_cmd(cmdeth).replace("\n","")
 
-	 if len(ipaddr) == 15 : 
-            ipaddr = unichr(0)+run_cmd(cmdeth)
-         else :	
-            for i in range( 15-len(ipaddr) ) :
-                space = space + " "
-            ipaddr = unichr(0)+space+run_cmd(cmdeth)
+         if len(ipaddr) == 0 :
+            ipaddr = unichr(0)+unichr(1)+" Not connected"
+
+         else:
+            if len(ipaddr) == 15 :
+               ipaddr = unichr(0)+run_cmd(cmdeth)
+            else :
+               for i in range( 15-len(ipaddr) ) :
+                  space = space + " "
+               ipaddr = unichr(0)+space+run_cmd(cmdeth)
       else :
          if len(ipaddr) == 15 :
             ipaddr = unichr(1)+run_cmd(cmd)
