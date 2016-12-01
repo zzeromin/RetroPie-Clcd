@@ -1,7 +1,7 @@
 ## i2c_address.sh
 # Title        : Automatic I2C Address Changer for RAS Console-Pi
 # Author       : zerocool, member of raspigamer
-# Creation Date: Oct 28, 2016
+# Creation Date: Dec 1, 2016
 # Web          : http://cafe.naver.com/raspigamer
 # Free and open for all to use. But put credit where credit is due.
 #
