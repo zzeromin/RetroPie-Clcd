@@ -64,7 +64,9 @@ ADDRESS = 0x27 # or 0x3f
 * http://forums.rasplay.org/topic/318/scrolling-game-title-for-retropie-v4-0-2-using-16x2-clcd-on-ras-console-pi
 
 ## Reference
+* https://retropie.org.uk/forum/topic/5061/scrolling-game-title-using-16x2-clcd-on-ras-console-pi
 * https://retropie.org.uk/forum/topic/2211/questions-about-runcommand-sh
 * https://retropie.org.uk/forum/topic/3134/meet-the-retrog-update-17-8-paintjob-pics
 * https://retropie.org.uk/forum/topic/3731/solved-variables-with-runcommand-onstart-sh
 * https://github.com/retropie/retropie-setup/wiki/runcommand
+
