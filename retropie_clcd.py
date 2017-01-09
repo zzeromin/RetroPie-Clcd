@@ -164,6 +164,7 @@ while 1:
          system = f.readline()
          system = system.replace("\n","")
          systemMap = {
+            "Berrycade":"Berrycade",
             "fba":"FinalBurn Alpha",
             "gba":"GameBoy Advance",
             "kodi":"KODI",
