@@ -170,7 +170,7 @@ while 1:
             "kodi":"KODI",
             "mame-mame4all":"MAME4ALL",
             "mame-advmame":"AdvanceMAME",
-            "mame-libretro":"lr-MAME",
+            "mame-libretro":"MAME-libretro",
             "msx":"MSX",
             "nes":"Famicom",   # Nintendo Entertainment System
             "psp":"PSPortable",    # PlayStation Portable
