@@ -3,27 +3,26 @@ Scrolling Game Title for RetroPie v4.0.2 using 16x2 CLCD on RAS Console-Pi
 
 <img src="https://github.com/zzeromin/RetroPie-Clcd/blob/master/RetroPie-Clcd01.jpg" width="70%" height="70%">
 
-##About
+## About
 Small script written in Python for RetroPie project (https://retropie.org.uk/) 
 running on Raspberry Pi 2,3, which displays all necessary info on a 16x2 CLCD display
 
-##Features
+## Features
 * Current Date and Time, IP address of eth0, wlan0
 * CPU Temperature and Speed
 * Emulation and ROM information
 
-##Youtube
+## Youtube
 * https://youtu.be/W6jqBTqPqjw
 * https://youtu.be/5KBNl-k6-SA
 * https://youtu.be/_7mxhkkjFqk
 
-##Development Environment
+## Development Environment
 * Raspberry Pi 2, 3
 * RetroPie v4.0.2 and later
 * 16x2 I2C Character LCD
 
-##Install
-
+## Install
 First, you should install Scraper( https://github.com/retropie/retropie-setup/wiki/scraper )
 
 Second, Install below:
@@ -34,7 +33,7 @@ chmod 755 10.CLCD.sh
 sudo ./10.CLCD.sh
 </code></pre>
 
-##Check 
+## Check 
 You should check your I2C address of 16x2 CLCD.
 I saw two types of I2C LCD modules. Those are two address each other normally => 0x27 or 0x3f.
 
