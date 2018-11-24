@@ -148,7 +148,7 @@ while 1:
 
    mylcd.lcd_clear()
    sec = 0
-   while ( sec < 1 ) :
+   while ( sec < 5 ) :
       # show system & rom file information
 
       try: 
@@ -182,13 +182,17 @@ while 1:
          system = systemMap.get(system)
          rom = f.readline()
          rom = rom.replace("\n","")
-         mylcd.lcd_display_string( "%s" %(rom), 2 )
-         mylcd.lcd_display_string( "%s" %(system), 1, 0 )
-         sleep(3)
+         mylcd.lcd_display_string( rom[0:16], 1 )
+         mylcd.lcd_display_string( rom[16:32], 2 )
+#         mylcd.lcd_display_string( "%s" %(rom), 2 )
+#         mylcd.lcd_display_string( "%s" %(system), 1, 0 )
+         sec = sec + 1
+         sleep(1)
          f.close() 
 
          flag = "TURN OFF"
          lines = rom
+"""
          wait = 0
          speed = 0.1
 
@@ -206,3 +210,4 @@ while 1:
                break
          sec = sec + 1
          sleep(1)
+"""
